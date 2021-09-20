@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nextcloud_archiver"
+version = "0.1.0"
+description = "Uses WebDAV client to access nextcloud, 7z to create an archive to be sent to a predefined location"
+authors = ["JoshKing56 <joshuaiking56@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+webdavclient3 = "^3.14.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.9b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
