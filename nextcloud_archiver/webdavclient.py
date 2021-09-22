@@ -1,4 +1,5 @@
 from webdav3.client import Client
+import configuration.arguments as args
 
 
 class WebDavClient(Client):
@@ -13,11 +14,9 @@ class WebDavClient(Client):
     """
 
     def __init__(self):
-        Client.__init__(self, nc_config.WEBDAV_OPTIONS)
-        self.donwload_settings = nc_config.WEBDAV_LOAD_KWARGS
+        Client.__init__(self, args.WEBDAV_OPTIONS)
+        self.donwload_settings = args.WEBDAV_LOAD_KWARGS
 
-    def list(self):
-        self.client.list()
-
-    def info(self, dir=None):
-        self.client.info(dir)
+    #TODO: Rewrite this with self()
+    def get_size(self, dir=None):
+        self.info(dir)
