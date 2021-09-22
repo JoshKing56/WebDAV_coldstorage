@@ -29,6 +29,11 @@ def list_directories_by_depth(root_list: list, webdav: Client, depth: int = 0) -
         depth -= 1
     return filelist
 
+<<<<<<< HEAD
+=======
+def 
+
+>>>>>>> 8675129d88854406c77f81e6f2cab58959ac8411
 def main():
     depth = -1
     end_archive = None

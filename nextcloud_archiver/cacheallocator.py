@@ -10,7 +10,11 @@ class CacheAllocator():
         self.storage_used = 0
         self.max_storage = max_storage
 
+<<<<<<< HEAD
     def get_storage(self) -> int:
+=======
+    def get_storage(self):
+>>>>>>> 8675129d88854406c77f81e6f2cab58959ac8411
         return(self.storage_used)
 
     def allocate(self, filesize: int) -> bool:
