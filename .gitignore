@@ -1,2 +1,2 @@
-fixgit.sh
-gitold/
+*.txt
+__pycache__/
